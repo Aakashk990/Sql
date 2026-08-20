@@ -21,3 +21,18 @@ select m.Title,b.Domestic_sales,b.International_sales from movies m inner join B
 -- Brave	237283207	301700000
 
 
+--question 2 Show the sales numbers for each movie that did better internationally rather than domestically 
+select m.Title,b.International_sales,b.Domestic_sales from movies m inner join Boxoffice b on m.id=b.Movie_id where b.International_sales > b.Domestic_sales;
+
+--o/p
+-- Title	International_sales	Domestic_sales
+-- Finding Nemo	555900000	380843261
+-- Monsters University	475066843	268492764
+-- Ratatouille	417277164	206445654
+-- Cars 2	368400000	191452396
+-- The Incredibles	370001000	261441092
+-- WALL-E	297503696	223808164
+-- Toy Story 3	648167031	415004880
+-- Up	438338580	293004164
+-- A Bug's Life	200600000	162798565
+-- Brave	301700000	237283207
