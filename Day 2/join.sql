@@ -36,3 +36,20 @@ select m.Title,b.International_sales,b.Domestic_sales from movies m inner join B
 -- Up	438338580	293004164
 -- A Bug's Life	200600000	162798565
 -- Brave	301700000	237283207
+
+
+--question 3 List all the movies by their ratings in descending order
+select m.Title,b.rating from movies m inner join Boxoffice b on m.id=b.Movie_id order by b.rating desc
+
+--o/p
+-- Title	Rating
+-- WALL-E	8.5
+-- Toy Story 3	8.4
+-- Toy Story	8.3
+-- Up	8.3
+-- Finding Nemo	8.2
+-- Monsters, Inc.	8.1
+-- Ratatouille	8
+-- The Incredibles	8
+-- Toy Story 2	7.9
+-- Monsters University	7.4
