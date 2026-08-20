@@ -1,0 +1,23 @@
+--Question 1
+--Find the domestic and international sales for each movie 
+select m.Title,b.Domestic_sales,b.International_sales from movies m inner join Boxoffice b on m.id=b.Movie_id;
+
+--o/p
+-- Query Results
+-- Title	Domestic_sales	International_sales
+-- Finding Nemo	380843261	555900000
+-- Monsters University	268492764	475066843
+-- Ratatouille	206445654	417277164
+-- Cars 2	191452396	368400000
+-- Toy Story 2	245852179	239163000
+-- The Incredibles	261441092	370001000
+-- WALL-E	223808164	297503696
+-- Toy Story 3	415004880	648167031
+-- Toy Story	191796233	170162503
+-- Cars	244082982	217900167
+-- Up	293004164	438338580
+-- Monsters, Inc.	289916256	272900000
+-- A Bug's Life	162798565	200600000
+-- Brave	237283207	301700000
+
+

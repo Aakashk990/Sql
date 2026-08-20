@@ -5,6 +5,6 @@ WHERE Country='United States'
 ORDER BY Population desc limit 2 offset 2;
 
 --o/p
-City	Population
-Chicago	2718782
-Houston	2195914
+-- City	Population
+-- Chicago	2718782
+-- Houston	2195914
