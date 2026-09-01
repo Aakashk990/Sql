@@ -1,0 +1,2 @@
+--Find the total domestic and international sales that can be attributed to each director
+select m.Director,sum(b.Domestic_sales+b.International_sales) from movies m left join Boxoffice b on m.id=b.Movie_id group by m.Director;
