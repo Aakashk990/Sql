@@ -1,12 +1,2 @@
--- Question 1: What is the total sales amount for each product?
--- • Question 2: What is the average sales amount for each product?
--- • Question 3: What is the total number of sales for each product?
--- • Question 4: What is the maximum and minimum sales amount for each product?
--- • Question 5: What is the total sales amount for each day?
--- • Question 6: What is the average sales amount for each day?
--- • Question 7: What is the total number of sales for each day?
--- • Question 8: What is the maximum and minimum sales amount for each day?
--- • Question 9: What is the total sales amount for each product and each day?
--- • Question 10: What is the average sales amount for each product and each day?
--- • Question 11: What is the total number of sales for each product and each day?
--- • Question 12: What is the maximum and minimum sales amount for each product and each day?
+--Find the longest time that an employee has been at the studio 
+select max(Years_employed) from Employees;
