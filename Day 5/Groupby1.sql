@@ -4,3 +4,7 @@ select max(Years_employed) from Employees;
 
 --For each role, find the average number of years employed by employees in that role
 select Role,avg(Years_employed) from Employees group by role;
+
+
+--Find the total number of employee years worked in each building 
+select Building,sum(Years_employed) from Employees group by Building;
