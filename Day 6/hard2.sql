@@ -37,3 +37,12 @@
 -- 1	Alice	Physics	2
 -- 1	Alice	Programming	1
 -- Explanation: Alice appears three times for Math, twice for Physics, and once for Programming.
+
+
+with CTE as(
+select * from epc_students s cross join epc_subjects sub order by s.student_id )
+
+select c.student_id,c.student_name,c.subject_name,count(e.subject_name) as attended_exams from CTE c
+left join epc_examinations e on c.student_id=e.student_id and c.subject_name=e.subject_name
+group by c.student_id,c.student_name,c.subject_name 
+order by c.student_id;
