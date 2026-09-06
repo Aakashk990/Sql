@@ -15,3 +15,9 @@ SELECT
     EXTRACT(MONTH FROM order_date)  AS order_month,
     EXTRACT(HOUR FROM order_date)   AS order_hour
 FROM orders;
+
+
+
+DATE_TRUNC: the most-used date function
+
+DATE_TRUNC rounds a timestamp down to the start of a period. It is the backbone of every time-series query you will ever write:
