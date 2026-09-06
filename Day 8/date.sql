@@ -21,3 +21,15 @@ FROM orders;
 DATE_TRUNC: the most-used date function
 
 DATE_TRUNC rounds a timestamp down to the start of a period. It is the backbone of every time-series query you will ever write:
+
+
+-- Daily revenue
+SELECT DATE_TRUNC('day', order_timestamp) AS order_day, SUM(amount) AS revenue
+FROM orders
+GROUP BY 1 ORDER BY 1;
+
+-- Weekly active users
+SELECT DATE_TRUNC('week', login_timestamp) AS login_week,
+       COUNT(DISTINCT user_id) AS wau
+FROM logins
+GROUP BY 1 ORDER BY 1;
