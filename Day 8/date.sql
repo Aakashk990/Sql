@@ -50,3 +50,20 @@ WHERE order_date >= CURRENT_DATE - INTERVAL '30 days';
 -- Expiration one year after signup
 SELECT user_id, signup_date + INTERVAL '1 year' AS expiration_date
 FROM users;
+
+
+
+Timezones: store UTC, convert at the end
+
+The rule that prevents the opening diagram's bug: every timestamp in the warehouse is UTC, converted to local time only in the final reporting layer.
+
+SQL
+
+-- PostgreSQL
+SELECT order_timestamp AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' FROM orders;
+
+-- Snowflake
+SELECT CONVERT_TIMEZONE('UTC', 'America/Los_Angeles', order_timestamp) FROM orders;
+
+-- BigQuery
+SELECT DATETIME(order_timestamp, 'America/Los_Angeles') FROM orders;
