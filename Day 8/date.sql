@@ -35,3 +35,18 @@ FROM logins
 GROUP BY 1 ORDER BY 1;
 
 DATE_TRUNC('month', '2024-03-15') returns 2024-03-01; 'week' returns the Monday of that ISO week on most platforms (BigQuery and MySQL default weeks to Sunday, verify on yours).
+
+
+
+
+Adding time: INTERVAL and DATEADD
+
+SQL
+
+-- Last 30 days
+SELECT * FROM orders
+WHERE order_date >= CURRENT_DATE - INTERVAL '30 days';
+
+-- Expiration one year after signup
+SELECT user_id, signup_date + INTERVAL '1 year' AS expiration_date
+FROM users;
