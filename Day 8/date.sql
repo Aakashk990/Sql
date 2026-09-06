@@ -67,3 +67,10 @@ SELECT CONVERT_TIMEZONE('UTC', 'America/Los_Angeles', order_timestamp) FROM orde
 
 -- BigQuery
 SELECT DATETIME(order_timestamp, 'America/Los_Angeles') FROM orders;
+
+
+-- WRONG: truncates UTC days, then relabels them
+DATE_TRUNC('day', order_timestamp) AT TIME ZONE 'America/Los_Angeles'
+
+-- RIGHT: convert first, then truncate
+DATE_TRUNC('day', CONVERT_TIMEZONE('UTC', 'America/Los_Angeles', order_timestamp))
