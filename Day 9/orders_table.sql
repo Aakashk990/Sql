@@ -1,15 +1,15 @@
--- CREATE TABLE orders (
---     order_id INT PRIMARY KEY,
---     customer_id INT,
---     customer_name VARCHAR(50),
---     order_date DATE,
---     order_timestamp TIMESTAMP,
---     order_timestamp_tz TIMESTAMPTZ,
---     ship_date DATE,
---     delivery_timestamp TIMESTAMP,
---     amount NUMERIC(10,2),
---     order_status VARCHAR(20)
--- );
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    customer_name VARCHAR(50),
+    order_date DATE,
+    order_timestamp TIMESTAMP,
+    order_timestamp_tz TIMESTAMPTZ,
+    ship_date DATE,
+    delivery_timestamp TIMESTAMP,
+    amount NUMERIC(10,2),
+    order_status VARCHAR(20)
+);
 
 
 INSERT INTO orders VALUES
