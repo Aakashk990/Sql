@@ -1,10 +1,10 @@
--- CREATE TABLE customer_logins (
---     login_id INT PRIMARY KEY,
---     customer_id INT,
---     login_time TIMESTAMPTZ,
---     logout_time TIMESTAMPTZ,
---     client_timezone VARCHAR(50)
--- );
+CREATE TABLE customer_logins (
+    login_id INT PRIMARY KEY,
+    customer_id INT,
+    login_time TIMESTAMPTZ,
+    logout_time TIMESTAMPTZ,
+    client_timezone VARCHAR(50)
+);
 
 
 INSERT INTO customer_logins VALUES
