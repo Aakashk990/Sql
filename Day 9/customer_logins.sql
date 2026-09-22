@@ -6,6 +6,7 @@ CREATE TABLE customer_logins (
     client_timezone VARCHAR(50)
 );
 
+-- inserting sample data into the customer_logins table
 
 INSERT INTO customer_logins VALUES
 (1,  101, '2024-01-10 03:15:00+00', '2024-01-10 03:45:00+00', 'Asia/Kolkata'),
