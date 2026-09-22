@@ -1,4 +1,5 @@
 --docstring 
+--question 2
 -- SQL script to create the orders table and insert sample data
 CREATE TABLE orders (
     order_id INT PRIMARY KEY,
