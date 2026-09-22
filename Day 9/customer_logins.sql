@@ -7,8 +7,6 @@ CREATE TABLE customer_logins (
 );
 
 
-
-
 INSERT INTO customer_logins VALUES
 (1,  101, '2024-01-10 03:15:00+00', '2024-01-10 03:45:00+00', 'Asia/Kolkata'),
 (2,  102, '2024-01-10 14:00:00+00', '2024-01-10 14:40:00+00', 'America/New_York'),
