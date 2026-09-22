@@ -1,3 +1,4 @@
+-- SQL script to create the customer_logins table and insert sample data
 CREATE TABLE customer_logins (
     login_id INT PRIMARY KEY,
     customer_id INT,
