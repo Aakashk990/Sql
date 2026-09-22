@@ -1,3 +1,5 @@
+--question 1
+-- SQL script to create the orders table and insert sample data
 -- SQL script to create the customer_logins table and insert sample data
 CREATE TABLE customer_logins (
     login_id INT PRIMARY KEY,
