@@ -4,6 +4,7 @@
 
 ---
 
+
 ## ⚠️ Important: Syntax mapping (read this first)
 
 PostgreSQL does **not** have `DATEADD()`, `DATEDIFF()`, or `CONVERT_TZ()` as functions — those are SQL Server / MySQL syntax. If you search for them in Postgres docs you'll find nothing, and that's expected, not a mistake on your end. Here's what Postgres uses instead:
