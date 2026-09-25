@@ -7,6 +7,8 @@ in Postgres docs you'll find nothing, and that's expected, not a mistake on your
 
 
 
+
+
 SQL Server / MySQL	PostgreSQL equivalent
 DATEADD(day, 7, order_date)	order_date + INTERVAL '7 days'
 DATEDIFF(day, date1, date2)	date2 - date1 (for DATE columns), or AGE(date2, date1) / EXTRACT(EPOCH FROM (ts2 - ts1)) for timestamps
