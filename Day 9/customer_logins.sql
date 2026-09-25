@@ -9,6 +9,9 @@ CREATE TABLE customer_logins (
     client_timezone VARCHAR(50)
 );
 
+
+
+
 -- inserting sample data into the customer_logins table
 
 INSERT INTO customer_logins VALUES
