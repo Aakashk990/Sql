@@ -16,9 +16,6 @@ CREATE TABLE orders (
 
 
 
-
-
-
 -- inserting sample data into the orders table
 INSERT INTO orders VALUES
 (1,  101, 'Ananya', '2023-01-15', '2023-01-15 09:23:00', '2023-01-15 09:23:00+05:30', '2023-01-17', '2023-01-20 14:00:00', 2499.00, 'Delivered'),
