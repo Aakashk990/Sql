@@ -10,12 +10,6 @@ CREATE TABLE customer_logins (
 );
 
 
-
-
-
-
-
-
 -- inserting sample data into the customer_logins table
 
 INSERT INTO customer_logins VALUES
